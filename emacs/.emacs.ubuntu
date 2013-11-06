@@ -38,13 +38,7 @@
 
 ;; set the font
 ;(set-frame-font "-outline-Bitstream Vera Sans Mono-normal-r-normal-normal-11-82-96-96-c-*-iso8859-1")
-;; Set font size to 11pt
-(let ((11pt (round (* 11.1 10))))
-  (set-face-attribute 'default (not 'this-frame-only)
-                      :height 11pt))
-;; Set font to Dejavu sans mono
-(set-face-attribute 'default (not 'this-frame-only)
-                    :font "DejaVu Sans Mono")
+(set-frame-font "-unknown-DejaVu Sans Mono-normal-normal-normal-*-13-*-*-*-m-0-iso8859-1")
 
 ;;-----------------------------------------------------------------------------
 ;; Various settings
