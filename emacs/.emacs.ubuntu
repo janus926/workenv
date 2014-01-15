@@ -38,7 +38,7 @@
 
 ;; set the font
 ;(set-frame-font "-outline-Bitstream Vera Sans Mono-normal-r-normal-normal-11-82-96-96-c-*-iso8859-1")
-(set-frame-font "-unknown-DejaVu Sans Mono-normal-normal-normal-*-13-*-*-*-m-0-iso8859-1")
+(set-frame-font "-unknown-DejaVu Sans Mono-normal-normal-normal-*-11-*-*-*-m-0-iso8859-1")
 
 ;;-----------------------------------------------------------------------------
 ;; Various settings
@@ -85,6 +85,9 @@
 ;; aspell
 ;(setq-default ispell-program-name "C:\\Program Files\\Aspell\\bin\\aspell.exe")
 
+;;
+(put 'erase-buffer 'disabled nil)
+
 ;;-----------------------------------------------------------------------------
 ;; Tools
 ;;-----------------------------------------------------------------------------
@@ -94,6 +97,10 @@
 (require 'anything-config)
 (require 'anything-gtags)
 (global-set-key [(meta a)] 'anything)
+
+;; ERC
+(setq erc-autojoin-channels-alist '(("mozilla.org" "#b2g" "#developer" "#mozilla-taiwan")))
+(erc :server "irc.mozilla.org" :port 6667 :nick "ting")
 
 ;;-----------------------------------------------------------------------------
 ;; Key bindings
@@ -116,6 +123,7 @@
         (define-key gtags-mode-map [(control /)] 'gtags-find-rtag)
         (define-key gtags-mode-map [(control .)] 'gtags-find-tag)
         (define-key gtags-mode-map [(control \')] 'gtags-find-symbol)
+        (define-key gtags-mode-map [(control \;)] 'gtags-find-with-idutils)
         (define-key gtags-mode-map [(control \,)] 'gtags-pop-stack)
         (switch-dir-mode t)
 ))
