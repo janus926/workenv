@@ -17,20 +17,17 @@ require("new-tabs.js");
 
 // webjumps
 define_webjump("g", "http://www.google.com.tw/search?q=%s");
-define_webjump("gdl", "http://developers.google.com/live/");
 define_webjump("or", "http://theoldreader.com");
 define_webjump("gm", "https://mail.google.com");
-define_webjump("coral", "http://coral.iasolution.net:8080/dashboard.action");
-define_webjump("tsys", "http://tsystem.iasolution.net");
 define_webjump("stock", "http://tw.stock.yahoo.com");
 define_webjump("hn", "http://news.ycombinator.com/news");
 define_webjump("reddit", "http://www.reddit.com");
-define_webjump("so", "http://stackoverflow.com/");
 define_webjump("fy", "http://tw.dictionary.yahoo.com/dictionary?p=%s");
-define_webjump("redmine", "http://rad-c.aplix.co.jp/redmine");
-define_webjump("jira", "http://jira.aplixcorp.com");
+define_webjump("zm", "https://mail.mozilla.com");
+define_webjump("bz", "https://bugzilla.mozilla.org");
 
 // open links in new buffer
 define_key(content_buffer_normal_keymap, "C-f", "follow-new-buffer");
 
-user_pref("browser.cache.disk.parent_directory", "R:\\");
+// use ramdisk as cache
+//user_pref("browser.cache.disk.parent_directory", "R:\\");
