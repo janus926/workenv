@@ -24,7 +24,7 @@ define_webjump("hn", "http://news.ycombinator.com/news");
 define_webjump("reddit", "http://www.reddit.com");
 define_webjump("fy", "http://tw.dictionary.yahoo.com/dictionary?p=%s");
 define_webjump("zm", "https://mail.mozilla.com");
-define_webjump("bz", "https://bugzilla.mozilla.org");
+define_webjump("bz", "https://bugzilla.mozilla.org/show_bug.cgi?id=%s");
 
 // open links in new buffer
 define_key(content_buffer_normal_keymap, "C-f", "follow-new-buffer");
