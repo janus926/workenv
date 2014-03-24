@@ -99,8 +99,11 @@
 (global-set-key [(meta a)] 'anything)
 
 ;; erc
-(setq erc-autojoin-channels-alist '(("mozilla.org" "#b2g" "#developer" "#mozilla-taiwan" "#perf" "#fxos-perf""#perf-tw")))
-(erc :server "irc.mozilla.org" :port 6667 :nick "ting")
+(setq erc-autojoin-channels-alist
+  '(("mozilla.org" "#mozilla-taiwan" "#perf" "#perf-tw" "#fxos-perf")))
+(defun myirc ()
+  (interactive)
+  (erc :server "irc.mozilla.org" :port 6667 :nick "ting"))
 
 ;; erc - notification
 (require 'notifications)

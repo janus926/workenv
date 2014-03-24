@@ -26,9 +26,16 @@ define_webjump("fy", "http://tw.dictionary.yahoo.com/dictionary?p=%s");
 // moz webjump
 define_webjump("zm", "https://mail.mozilla.com");
 define_webjump("bz", "https://bugzilla.mozilla.org/show_bug.cgi?id=%s");
-define_webjump("tpad", "https://taiwan.etherpad.mozilla.org");
+define_webjump("twpad", "https://taiwan.etherpad.mozilla.org");
+define_webjump("pad", "https://etherpad.mozilla.org");
 define_webjump("gmoz", "https://google.com/a/mozilla.com");
 define_webjump("hg", "http://hg.mozilla.org");
+define_webjump("pb", "https://phonebook.mozilla.org");
+define_webjump("intra", "https://intranet.mozilla.org");
+define_webjump("safari", "http://my.safaribooksonline.com");
+define_webjump("dataz", "https://datazilla.mozilla.org/b2g");
+define_webjump("dxr", "http://dxr.mozilla.org");
+define_webjump("mxr", "http://lxr.mozilla.org");
 
 // open links in new buffer
 define_key(content_buffer_normal_keymap, "C-f", "follow-new-buffer");
