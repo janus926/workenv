@@ -100,7 +100,7 @@
 
 ;; erc
 (setq erc-autojoin-channels-alist
-  '(("mozilla.org" "#mozilla-taiwan" "#perf" "#perf-tw" "#fxos-perf")))
+  '(("mozilla.org" "#mozilla-taiwan" "#perf" "#perf-tw" "#fxos-perf" "#jsapi")))
 (defun myirc ()
   (interactive)
   (erc :server "irc.mozilla.org" :port 6667 :nick "ting"))
@@ -148,7 +148,7 @@
 
 ;; cc
 (setq c-default-style "bsd")
-(setq c-basic-offset 4)
+(setq c-basic-offset 2)
 (add-hook 'c-mode-common-hook
     (lambda ()
         (require 'google-c-style)
