@@ -42,3 +42,7 @@ define_key(content_buffer_normal_keymap, "C-f", "follow-new-buffer");
 
 // use ramdisk as cache
 //user_pref("browser.cache.disk.parent_directory", "R:\\");
+
+// history completion
+url_completion_use_history = true;
+session_pref('browser.history_expire_days', 7);
