@@ -24,7 +24,7 @@ define_webjump("hn", "http://news.ycombinator.com/news");
 define_webjump("reddit", "http://www.reddit.com");
 define_webjump("fy", "http://tw.dictionary.yahoo.com/dictionary?p=%s");
 // moz webjump
-define_webjump("zm", "https://mail.mozilla.com");
+define_webjump("zm", "https://mail.google.com/mail/u/1/");
 define_webjump("bz", "https://bugzilla.mozilla.org/show_bug.cgi?id=%s");
 define_webjump("twpad", "https://taiwan.etherpad.mozilla.org");
 define_webjump("pad", "https://etherpad.mozilla.org");

@@ -88,6 +88,11 @@
 ;;
 (put 'erase-buffer 'disabled nil)
 
+;; input from ibus
+(require 'ibus)
+(add-hook 'after-init-hook 'ibus-mode-on)
+(setq ibus-agent-file-name "/usr/lib/ibus-el/ibus-el-agent")
+
 ;;-----------------------------------------------------------------------------
 ;; Tools
 ;;-----------------------------------------------------------------------------
