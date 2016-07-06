@@ -105,7 +105,7 @@
 
 ;; erc
 (setq erc-autojoin-channels-alist
-  '(("mozilla.org" "#mozilla-taiwan" "#perf" "#perf-tw" "#fxos-perf" "#b2g")))
+  '(("mozilla.org" "#mozilla-taiwan" "#perf-tw" "#e10s" "#uptime")))
 (defun myirc ()
   (interactive)
   (erc :server "irc.mozilla.org" :port 6667 :nick "ting"))
