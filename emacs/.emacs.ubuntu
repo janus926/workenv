@@ -37,8 +37,8 @@
 (column-number-mode t)
 
 ;; set the font
-;(set-frame-font "-outline-Bitstream Vera Sans Mono-normal-r-normal-normal-11-82-96-96-c-*-iso8859-1")
-(set-frame-font "-unknown-DejaVu Sans Mono-normal-normal-normal-*-11-*-*-*-m-0-iso8859-1")
+(set-frame-font "-outline-Bitstream Vera Sans Mono-normal-r-normal-normal-11-82-96-96-c-*-iso8859-1")
+;(set-frame-font "-unknown-DejaVu Sans Mono-normal-normal-normal-*-11-*-*-*-m-0-iso8859-1")
 
 ;;-----------------------------------------------------------------------------
 ;; Various settings
@@ -88,16 +88,11 @@
 ;;
 (put 'erase-buffer 'disabled nil)
 
-;; input from ibus
-(require 'ibus)
-(add-hook 'after-init-hook 'ibus-mode-on)
-(setq ibus-agent-file-name "/usr/lib/ibus-el/ibus-el-agent")
-
 ;;-----------------------------------------------------------------------------
 ;; Tools
 ;;-----------------------------------------------------------------------------
 ;; for switching buffers
-(iswitchb-mode t)
+(ido-mode t)
 
 (require 'anything-config)
 (require 'anything-gtags)
