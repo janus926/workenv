@@ -1,6 +1,15 @@
 ;;-----------------------------------------------------------------------------
 ;; Environment
 ;;-----------------------------------------------------------------------------
+
+;; Added by Package.el.  This must come before configurations of
+;; installed packages.  Don't delete this line.  If you don't want it,
+;; just comment it out by adding a semicolon to the start of the line.
+;; You may delete these explanatory comments.
+(package-initialize)
+
+(add-to-list 'package-archives '("melpa" . "https://melpa.org/packages/"))
+
 (let ((default-directory "~/w/workenv/emacs/site-lisp/"))
   (normal-top-level-add-to-load-path '("."))
   (normal-top-level-add-subdirs-to-load-path))
@@ -148,7 +157,7 @@
 
 ;; cc
 (setq c-default-style "bsd")
-(setq c-basic-offset 2)
+(setq c-basic-offset 4)
 (add-hook 'c-mode-common-hook
     (lambda ()
         (require 'google-c-style)
